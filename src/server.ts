@@ -1,7 +1,7 @@
-import express, { Application, Express } from 'express';
+import express, { Application } from 'express';
 import { initLoaders } from './loaders/index.js';
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 
 const startServer = async (): Promise<void> => {
   try {
