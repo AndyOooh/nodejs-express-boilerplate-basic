@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-export const getUsers = async (_req: Request, res: Response): Promise<any> => {
+export const getUsers = async (_req: Request, res: Response) => {
   try {
     // const users = await User.find();
     const users: string = 'sasd';

@@ -8,9 +8,3 @@ router.use('/users', usersRoutes);
 // router.use('/posts', postsRoutes);
 
 export { router as apiRoutes };
-
-// export const apiRoutes: string = 'sadsfsdf';
-// export default router;
-// export const apiRoutes = 'sadasd'
-// = router;
-// export apiRoutes
