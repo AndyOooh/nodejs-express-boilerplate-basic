@@ -1,6 +1,6 @@
 import { Express } from 'express';
+import { expressLoader } from './express.js';
 
-import expressLoader from './express';
 // import mongooseLoader from './mongoose';
 
 type initParams = {
