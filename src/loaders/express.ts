@@ -1,5 +1,5 @@
 import express, { Application } from 'express';
-import { apiRoutes } from 'src/routes';
+import { apiRoutes } from 'src/api/routes';
 
 export const expressLoader = async (app: Application) => {
   app.get('/status', (req, res) => {
