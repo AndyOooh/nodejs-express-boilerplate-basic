@@ -1,13 +1,12 @@
 import express, { Express } from 'express';
-// import loaders from './loaders';
+import { initLoaders } from './loaders/index.js';
 
 const port = process.env.PORT || 8000;
 
 const startServer = async (): Promise<void> => {
   try {
     const app: Express = express();
-
-    // await loaders.init({ expressApp: app });
+    await initLoaders({ expressApp: app });
 
     app
       .listen(port, () => {
