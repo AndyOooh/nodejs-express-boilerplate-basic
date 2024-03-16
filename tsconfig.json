@@ -1,22 +1,25 @@
+/* https://www.npmjs.com/package/@tsconfig/node21 */
+
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "ES2022",
-    "moduleResolution": "Node",
-    "skipLibCheck": true,
+    /* Start: tsconfig recommended node 21 */
+    // "lib": ["es2023"],
+    "module": "ESNext",
+    "moduleResolution": "Node", // node16
+    "target": "ES2020",
     "strict": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    /* End: tsconfig recommended node 21 */
+
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
     "sourceMap": true,
     "outDir": "dist",
-    "baseUrl": ".",
+    "baseUrl": ".", // neccessary for paths to work
     "rootDir": "src",
-    "declaration": false,
     "paths": {
-      // "@app/*": ["src/*"],
       "@config/*": ["src/config/*"],
       "@routes/*": ["src/routes/*"],
       "@controllers/*": ["src/controllers/*"],
@@ -26,5 +29,5 @@
       "@middleware/*": ["src/middleware/*"]
     }
   },
-  "include": ["src/**/*", "src/server.ts"]
+  "include": ["src/**/*"]
 }
