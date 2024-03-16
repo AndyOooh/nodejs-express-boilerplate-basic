@@ -1,9 +1,9 @@
 import { Application } from 'express';
-import { expressLoader } from './express.js';
+import { expressLoader } from './express';
 
 export const initLoaders = async (app: Application) => {
   await expressLoader(app);
   console.log('Express Intialized');
 
-  // ... more loaders can be here, e.g. agenda, Redis, Mongoos, etc.
+  // ... Add more loaders, e.g. agenda, Redis, Mongoose, etc.
 };

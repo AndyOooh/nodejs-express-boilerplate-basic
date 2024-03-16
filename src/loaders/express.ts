@@ -1,4 +1,9 @@
 import express, { Application } from 'express';
+import { apiRoutes } from 'src/routes';
+// import { apiRoutes } from 'src/routes';
+// import apiRoutes from 'src/routes';
+
+// import { apiRoutes } from 'src/routes';
 
 export const expressLoader = async (app: Application) => {
   app.get('/status', (req, res) => {
@@ -6,6 +11,8 @@ export const expressLoader = async (app: Application) => {
   });
 
   app.use(express.json());
+  app.use('/', apiRoutes);
+  //   app.use(errorHandler);
 
   return app;
 };

@@ -1,6 +1,6 @@
 import express, { Application } from 'express';
-import { initLoaders } from './loaders/index.js';
-import { configVars } from './config/index.js';
+import { configVars } from './config';
+import { initLoaders } from './loaders';
 
 const { port } = configVars;
 
