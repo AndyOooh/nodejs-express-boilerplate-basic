@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-boilerplate-basic",
+  "name": "nodejs-express-boilerplate-basic",
   "version": "0.1.0",
   "main": "server.ts",
   "type": "module",
