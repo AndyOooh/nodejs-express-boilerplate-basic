@@ -1,5 +1,5 @@
-import { fetchUsers } from '@services/user';
 import { Request, Response } from 'express';
+import { fetchUsers } from '@services/user';
 
 export const getUsers = async (_req: Request, res: Response) => {
   try {
