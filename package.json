@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsx watch src/server.ts",
-    "start": "tsx dist/server.js"
+    "dev:start": "tsx dist/server.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
